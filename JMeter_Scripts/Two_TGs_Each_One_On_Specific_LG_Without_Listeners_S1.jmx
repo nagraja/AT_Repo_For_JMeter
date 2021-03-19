@@ -14,7 +14,7 @@
     <hashTree>
       <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="TG1" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="Threads initial delay">1</stringProp>
         <stringProp name="Start users count">1</stringProp>
         <stringProp name="Start users count burst">1</stringProp>
@@ -34,7 +34,7 @@
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="filename">C:/JMeter_POC_Project/JMeterScripts_Data_FIles/ListUsers_S1.csv</stringProp>
@@ -88,7 +88,7 @@
       </hashTree>
       <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="TG2" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="Threads initial delay">1</stringProp>
         <stringProp name="Start users count">1</stringProp>
         <stringProp name="Start users count burst">1</stringProp>
@@ -108,7 +108,7 @@
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
             <stringProp name="filename">C:/JMeter_POC_Project/JMeterScripts_Data_FIles/SingleUser_S1.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames"></stringProp>
