@@ -23,5 +23,10 @@
 :: JMeter Test Execution from Non-GUI mode (From CLI) Starts
 	cd %JmeterBinLocation%
 	:: jmeter -n -t %JmeterScriptLocation%\Two_TGs_Each_One_On_Specific_LG_Without_Listeners_S1.jmx -l %JmeterTestResultLocation%\CSV_TestRsult1.csv -e -o %JmeterDashboardReportsLocation% -R 10.1.20.4
-	jmeter -n -t %JmeterScriptLocation%\Two_TGs_Each_One_On_Specific_LG_Without_Listeners_S1.jmx -l %JmeterTestResultLocation%\%Date_And_TIme% -e -o %JmeterDashboardReportsLocation% -R 10.1.20.4
+	
+	:: jmeter -n -t %JmeterScriptLocation%\Two_TGs_Each_One_On_Specific_LG_Without_Listeners_S1.jmx -l %JmeterTestResultLocation%\%Date_And_TIme% -e -o %JmeterDashboardReportsLocation% -R 10.1.20.4
+	
+	:: jmeter -n -t %JmeterScriptLocation%\Two_TGs_Each_One_On_Specific_LG_Without_Listeners_S1.jmx -l %JmeterTestResultLocation%\%Date_And_TIme% -e -o %JmeterDashboardReportsLocation% -R 10.1.20.7
+	
+	 jmeter -n -t %JmeterScriptLocation%\Two_TGs_Each_One_On_Specific_LG_Without_Listeners_S1.jmx -l %JmeterTestResultLocation%\%Date_And_TIme% -e -o %JmeterDashboardReportsLocation% -r
 :: JMeter Test Execution from Non-GUI mode (From CLI) Ends
